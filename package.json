@@ -16,6 +16,7 @@
     "aos": "^2.3.4",
     "nuxt": "^3.14.1592",
     "typed.js": "^2.1.0",
+    "vercel": "^39.1.2",
     "vue": "latest",
     "vue-router": "latest"
   },
