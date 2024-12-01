@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount, getCurrentInstance } from "vue";
-import {  PhMoonStars, PhSun} from "@phosphor-icons/vue";
+import { PhMoonStars, PhSun } from "@phosphor-icons/vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -98,6 +98,18 @@ function toggleDarkMode() {
 
         <div class="flex items-center px-4 lg:px-1">
           <button
+            @click="toggleDarkMode"
+            class="px-2 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 mr-12 lg:mr-0"
+          >
+            <!-- Gunakan icon Sun untuk Light Mode dan Moon untuk Dark Mode -->
+            <span v-if="isDarkMode">
+              <PhMoonStars :size="32" />
+            </span>
+            <span v-else>
+              <PhSun :size="32" />
+            </span>
+          </button>
+          <button
             ref="hamburger"
             id="hamburger"
             name="hamburger"
@@ -146,25 +158,19 @@ function toggleDarkMode() {
               </li>
               <li class="group">
                 <a
+                  href="https://bxfundz.my.id"
+                  target="_blank"
+                  class="text-base text-black py-2 mx-8 flex group-hover:text-blue-400 dark:text-white"
+                  >Blog</a
+                >
+              </li>
+              <li class="group">
+                <a
                   href="https://links.bxfundz.my.id"
                   target="_blank"
                   class="text-base text-black py-2 mx-8 flex group-hover:text-blue-400 dark:text-white"
                   >Links</a
                 >
-              </li>
-              <li class="group">
-                <button
-                  @click="toggleDarkMode"
-                  class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-                >
-                  <!-- Gunakan icon Sun untuk Light Mode dan Moon untuk Dark Mode -->
-                  <span v-if="isDarkMode">
-                    <PhMoonStars :size="32" />
-                  </span>
-                  <span v-else>
-                    <PhSun :size="32" />
-                  </span>
-                </button>
               </li>
             </ul>
           </nav>

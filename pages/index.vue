@@ -13,6 +13,7 @@ onMounted(() => {
   new $typed(slogan.value, {
     strings: [
       "Web Developer",
+      "A.I Engineering",
       "Student",
       "Tech Enthusiast",
       "Photographer",
@@ -59,9 +60,8 @@ onMounted(() => {
                 <NuxtImg
                   src="img/pfp1.png"
                   alt="photo-profile"
-                  width="280px"
-                  height="280px"
-                  class="max-w-full mx-auto rounded-lg relative bg-white dark:bg-slate-200 shadow-2xl p-2 pb-6 lg:w-[400px]"
+                  sizes="280px"
+                  class="max-w-full mx-auto rounded-lg relative bg-white dark:bg-slate-200 shadow-2xl p-2 pb-6 lg:w-[400px] aspect-square object-cover"
                 />
               </div>
               <p class="text-center text-slate-500">-Bintang Maulana</p>

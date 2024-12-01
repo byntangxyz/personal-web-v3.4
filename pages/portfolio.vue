@@ -8,11 +8,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800 overflow-hidden">
+  <section
+    id="portfolio"
+    class="bg-light pt-36 pb-16 dark:bg-dark overflow-hidden"
+  >
     <div class="container">
       <div class="w-full px-4">
         <div class="mx-auto mb-16 max-w-xl text-center" data-aos="fade-up">
-          <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+          <h4
+            class="mb-2 text-lg font-semibold text-primary dark:text-blue-400"
+          >
+            Portfolio
+          </h4>
           <h2
             class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
           >
@@ -35,7 +42,7 @@ onMounted(() => {
           <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
             Alya Roshidere Wiki
           </h3>
-          <p class="text-base font-medium text-secondary">
+          <p class="text-base font-medium text-primary dark:text-secondary">
             Project html pertama saya tanpa framework apapun. Disini memuat
             informasi tentang Alissa Mikhailovna Kujuo atau Alya dari anime
             Roshidere.
@@ -52,7 +59,7 @@ onMounted(() => {
           <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
             Website Kelas SIJA ARC
           </h3>
-          <p class="text-base font-medium text-secondary">
+          <p class="text-base font-medium text-primary dark:text-secondary">
             Website kelas yang saya buat bersama teman sekelas. Website ini
             berisi informasi tentang kelas SIJA ARC dan dibuat dengan NextJs.
           </p>
@@ -72,7 +79,7 @@ onMounted(() => {
           <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
             Hololive ID Gen 3 Web
           </h3>
-          <p class="text-base font-medium text-secondary">
+          <p class="text-base font-medium text-primary dark:text-secondary">
             Karena saya ketagihan react, akhirnya saya membuat web ini karena
             gabut. Ini adalah website berisi talent dan informasinya dari
             Hololive ID Gen 3.
@@ -89,11 +96,40 @@ onMounted(() => {
           <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
             BxNime Anime List
           </h3>
-          <p class="text-base font-medium text-secondary">
+          <p class="text-base font-medium text-primary dark:text-secondary">
             Website anime list dengan menggunakan API dari MyAnimeList. Website
             ini dibuat dengan menggunakan React dan Typescript.
           </p>
         </a>
+        <div class="mx-auto mb-16 max-w-xl text-center" data-aos="fade-up">
+          <h2
+            class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+          >
+            Sertifikasi Keahlian
+          </h2>
+        </div>
+        <div
+          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
+        >
+          <NuxtImg
+            src="/img/ser1.png"
+            sizes="400"
+            class="mb-12 p-4 md:w-1/3"
+            data-aos="fade-up"
+          />
+          <NuxtImg
+            src="/img/ser3.png"
+            sizes="400"
+            class="mb-12 p-4 md:w-1/3"
+            data-aos="fade-up"
+          />
+          <NuxtImg
+            src="/img/ser2.png"
+            sizes="400"
+            class="mb-12 p-4 md:w-1/3"
+            data-aos="fade-up"
+          />
+        </div>
       </div>
     </div>
   </section>

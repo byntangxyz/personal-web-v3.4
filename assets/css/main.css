@@ -125,3 +125,8 @@ body {
     color: #ac92ec;
   }
 }
+
+
+.ratio{
+  aspect-ratio: 1/1;
+}
