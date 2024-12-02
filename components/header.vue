@@ -166,7 +166,7 @@ function toggleDarkMode() {
               </li>
               <li class="group">
                 <a
-                  href="https://links.bxfundz.my.id"
+                  href="https://bxlinks.vercel.app"
                   target="_blank"
                   class="text-base text-black py-2 mx-8 flex group-hover:text-blue-400 dark:text-white"
                   >Links</a
